@@ -1,14 +1,17 @@
 
 //When a user click + , the number increase , vice versa.
 
+const nextClick =document.getElementById('next');
+const previousClick = document.getElementById('prev');
+
 let counter = 0;
 
-document.getElementById('next').addEventListener('click', function() {
+nextClick.addEventListener('click', function() {
     counter += 1;
     document.querySelector('h1').innerHTML = counter;
 });
 
-document.getElementById('prev').addEventListener('click', function() {
+previousClick.addEventListener('click', function() {
     counter -= 1;
     document.querySelector('h1').innerHTML = counter;
 });
